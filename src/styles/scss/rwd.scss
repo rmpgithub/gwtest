@@ -1,0 +1,983 @@
+/* Large Devices, Wide Screens */
+@media screen and (min-width : 1600px) {
+    .main-jumbotron2 {
+        .container {
+            min-width: 1300px;
+            padding-left: calc((100vw - 1300px) / 2);
+        }
+    }
+}
+@media screen and (max-width : 1441px) {
+    header.header {
+        height: 75px;
+    }
+    .main-jumbotron {
+        .aside-small-header {
+            top: 50%;
+        }
+        .container {
+            top: 80%;
+            // padding-left: 0;
+            // margin-left: calc((100vw - 1140px) / 2);
+            h2 {
+                font-size: 50px;
+                max-width: 490px;
+            }
+        }
+        margin-bottom: 20px;
+    }
+    .sponsorships  {
+            hr {
+                margin-bottom: 13px;
+            }
+        .sponsorship {
+            
+            img {
+                margin-bottom: 5px;            
+                transform: scale(.7);
+            }
+            h5, p {
+                font-size: 12px;
+            }
+            &:last-child {
+                img {
+                    margin-bottom: -13px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 991px) {
+    .newest {
+        .right {
+            img {
+                position: absolute;
+               left: 50%;
+               top: 50%;
+               -webkit-transform: translateY(-50%) translateX(-50%);
+            }
+        }
+    }
+}
+@media screen and (max-width : 1200px) {
+    .main-jumbotron {
+        .aside-small-header {
+            top: 33%;
+        }
+        .container {
+            top: 80%;
+            padding-left: 30px;
+        }
+
+    }
+    .info .row .left .content, .contact .row .left .content {
+        margin-left: calc((100vw - 900px) / 2);
+    }
+    .contact {
+        .row {
+            .box-contact {
+                padding: 40px;
+                min-height: 260px;
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .form-title > h3 {
+            margin: 70px 0 60px;
+            font-size: 60px;
+        }
+        .form-title {
+            .aside-small-header {
+                width: 450px;
+                margin-top: -110px;
+                h4 {
+                    text-indent: calc((100vw - 900px) / 2);
+                }
+            }
+        }    
+        .map {
+            height: 500px;
+        }
+    }
+
+    .forExhibitors-application {
+        .target,
+        .advantage,
+        .localization {		
+            height: 330px;
+            .image {
+                height: 100%;
+
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+            .descr {
+
+                height: 250px;
+                h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-transform: none;
+                    margin-bottom: 40px;
+
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+    }
+
+    .forExhibitors-drive {
+        .row {      
+
+            .image-box {
+                max-width: 900px;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .box-accommodation {
+                padding: 33px;
+                .border-line {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .image {
+            background: url('../../src/assets/img/52.png') center center no-repeat;
+            background-size: cover;
+            height: 100%;
+            &:after {
+                content: "";
+                clear: both;
+                display: block;
+            }
+        }
+        .drive-title > h3 {
+            margin: 70px 0 60px;
+            font-size: 60px;
+        }
+        .drive-title {
+            .aside-small-header {
+                width: 450px;
+                margin-top: -110px;
+                h4 {
+                    text-indent: calc((100vw - 900px) / 2);
+                }
+            }
+        }  
+
+    }
+
+    .about {
+        .info._1 {
+            .right {
+                .content {
+                    width: 100%;
+                }
+            }
+        }
+
+        .first-edition {
+            .jumbotron {
+                p {
+                    font-size: 20px;
+                }
+
+            }
+            .history {
+                width: 70%;
+            }
+        }
+
+        .info._2{
+            .left{
+                .content {
+                    width: 70%;
+                    margin: 110px auto 0 auto;
+                }
+            }
+        }
+    }
+
+    .info, .contact {
+        height: 450px;
+    }
+
+
+}
+
+
+/* Medium Devices, Desktops */
+@media screen and (max-width : 992px) {
+    header {
+        .hamburger {
+            display: block !important;         
+            margin-left: auto;
+        }
+        nav {
+            margin: auto;
+            width: 100%;
+            max-height: 0;
+            position: absolute;
+            left: 0;
+            top: 75px;
+            z-index: 2;
+            background-color: #fff;
+            transition: max-height 0.25s;
+            overflow: hidden;
+            &.active {
+                max-height: 300px;
+            }
+            .tel {
+                display: none;
+            }
+            ul {
+                display: block;
+                list-style: none;
+                width: 100%;
+                float: left;
+                padding-left: 0;                
+                li {
+                    width: 100%;
+                    display: block !important;
+                    margin-left: 0;
+                    padding: 10px 0 10px 70px;
+                    border-bottom: 1px solid #e3e3e3;
+                    margin: 0 10px;
+                    &.flag {
+                        padding: 10px 70px;
+                    }
+                    &:hover {
+                        background-color: #e3e3e3;
+                    }
+                }
+            }
+        }
+    }
+    .news,
+    .for-visitors,
+    .for-expositors,
+    .info,
+    .assosiates .container {
+       & > h3 {
+            font-size: 60px;
+            text-align: center;
+        } 
+    }
+    .content {
+        margin-left: unset !important;
+        margin: 0 auto !important;
+        margin-top: 90px !important;
+    }
+    .for-visitors,
+    .for-expositors {
+        .row {
+            display: block;
+            .image {
+                background-size: contain !important;
+                height: 50%;
+            }
+            .info-banner {
+                margin: 30px auto;
+                p {          
+                    max-height: 140px;         
+                    max-height: -webkit-fill-available;
+                }
+            }
+        }
+    }
+    .main-jumbotron {
+        // background: transparent url('../../src/assets/img/jumbotron.png') left top no-repeat;   
+        height: 85vh;
+        .container {
+            top: 37%;
+            padding-left: 30px;
+        }
+    }
+    .videocontainer {
+        display: none;
+    }
+    .contact {
+        .row {
+            .image-box {
+                margin-top: 50px;
+                margin-left: 10px;
+                margin-right: 10px;
+                img {
+
+                }
+            }
+            .box-contact {
+                padding: 30px;
+                min-height: 200px;
+                p {
+                    font-size: 18px;
+                }
+            }
+            .form-title > h3 {
+                margin: 50px 0 50px;
+                font-size: 60px;
+            }
+            .form-title {
+                .aside-small-header {
+                    width: 320px;
+                    margin-top: -95px;
+                    h4 {
+                        text-indent: calc((100vw - 700px) / 2);
+                    }
+                }
+            }   
+        }
+        .map {
+            height: 400px;
+        }
+    }
+
+    .forExhibitors {
+        .row {
+            .info-banner {
+                padding: 30px;
+
+            }
+        }
+    }
+
+    .forExhibitors-application {
+        .row {      
+            .info-banner h4 {
+                font-size: 20px;
+            }
+        }
+
+
+        .target,
+        .advantage,
+        .localization {		
+            //   height: 480px;
+            //  margin-bottom: 100px;
+            .image {
+                height: 100%;
+                width: 100%;
+                background-position: center center;
+
+            }
+            .descr {
+                width: 100%;
+                height: 200px;
+                background-color: #f0f0f0;
+                position: relative;	
+                float: right;
+                margin-right: 0;
+                top: 0;
+                padding: 20px;
+                h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-transform: none;
+                    margin-bottom: 40px;
+
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+
+
+        }
+        .text-box {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            p {
+                font-size: 20px;
+                margin-left: 20px;
+
+            }
+            ul {
+                font-size: 18px;
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+    .forExhibitors-drive {
+        .row {
+
+            .info-banner h4 {
+                font-size: 20px;
+            }
+
+
+            .image-box {
+                margin-top: 50px;
+                margin-left: 10px;
+                margin-right: 10px;
+
+            }
+        }
+
+
+        .drive-title > h3 {
+            margin: 50px 0 50px;
+            font-size: 60px;
+        }
+        .drive-title {
+            .aside-small-header {
+                width: 320px;
+                margin-top: -95px;
+                h4 {
+                    text-indent: calc((100vw - 700px) / 2);
+                }
+            }
+        }   
+
+    }
+    .forExhibitors-drive .text-box p {
+        font-size: 20px;
+    }
+
+    .about {
+        .info._1 {
+            .right {
+                height: auto;
+                padding: 0;
+                .content {
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 40px;
+                }
+            }
+            .left {
+                max-height: 400px;
+            }
+        }
+
+        .info._2 {
+            .left {
+                .content {
+                }
+            }
+
+            .right {
+                height: 400px;
+            }
+        }
+
+        .first-edition {
+            .jumbotron {
+                p {
+                    width: auto;
+                }
+            }
+            .history {
+                padding: 40px;
+            }
+
+        }
+
+        .see-more.row {
+            float: left;
+            margin: 50px 0;
+        }
+        .see-more {
+            .info-banner {
+                margin: 20px auto;
+            }
+        }
+    }
+
+
+    footer .copyrights p:first-child {
+        width: 100%;
+    }
+    footer .copyrights p:nth-child(2) {
+        float: left;
+    }
+
+    .news {
+        .newest {
+            display: flex;
+            flex-direction: column-reverse;
+            overflow: hidden;
+            height: auto;
+            .right {
+                width: 100%;
+                padding: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .left {
+                width: 100%;
+            }
+        }
+    }
+    footer {
+        .copyrights {
+            bottom: -50px;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width: 768px) {
+    .news,
+    .for-visitors,
+    .for-expositors,
+    .info,
+    .assosiates .container {
+       & > h3 {
+            font-size: 60px;
+            text-align: center;
+        } 
+    }    
+    .main-jumbotron {
+        .container {
+            top: 23%;
+            padding-left: 30px;
+        }
+    }
+    .aside-small-header {
+        display: none;
+    }
+    .content {
+        margin-left: unset !important;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+    }
+    .contact {
+        .row {
+            .form-title > h3 {
+                margin: 50px 0 50px;
+                font-size: 36px;
+            }
+
+            .form-title {
+                .aside-small-header {
+                    width: 230px;
+                    margin-top: -85px;
+                    h4 {
+                        text-indent: 20px;
+                        font-size: 16px;
+                    }
+                }
+            }   
+        }
+        form {
+            margin-bottom: 70px;
+            input {
+                padding: 15px 20px;
+            }
+            textarea {
+                padding: 15px 20px;
+            }
+        }
+        .map {
+            height: 300px;
+        }
+    }
+    .for-visitors,
+    .for-expositors {
+        .row {
+            display: block;
+            .image {
+                background-size: contain !important;
+                height: 50%;
+            }
+            .info-banner {
+                margin: 30px auto;
+                p {          
+                    max-height: 140px;         
+                    max-height: -webkit-fill-available;
+                }
+            }
+        }
+    }
+    .forExhibitors,
+    .forVisitors {
+        .row {
+            display: block;
+            .info-banner {
+
+                padding: 30px;
+
+                height: unset;
+                min-height: unset;
+
+                &._1,
+                &._3 {
+                    float: none;
+                }
+                &._2,
+                &._4 {
+                    float: none;
+                }
+                &._1 {
+                    border: none;
+                }
+                &._4 {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .forExhibitors-regulations {   
+        .row {
+
+            .info-banner {
+                padding: 30px;
+            }
+        }
+        .regulations {
+            li {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .forExhibitors-application .row .info-banner {
+        padding: 30px;
+    }
+
+    .forExhibitors-drive {
+        .row {
+
+            .info-banner {
+                padding: 30px;
+            }
+
+            .drive-title > h3 {
+                margin: 50px 10 50px;
+                font-size: 36px;
+            }
+
+            .drive-title {
+                .aside-small-header {
+                    width: 230px;
+                    margin-top: -85px;
+                    h4 {
+                        text-indent: 20px;
+                        font-size: 16px;
+                    }
+                }
+            } 
+
+            .box-accommodation {
+                h2 {
+                    font-size: 20px;
+                }
+
+                .price {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .idea {
+        .target,
+        .advantage,
+        .localization {
+            .image {
+                width: 100%;
+                background-size: contain;
+                float: none !important;
+            }
+            .descr {
+                width: 100%;
+                top: -120px;
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+        .localization {
+            .descr {
+                height: auto;
+            }
+        }
+    }
+    .about {
+        .info._1 {
+            .left {
+                max-height: 300px;
+            }
+        }
+        .first-edition {
+            .jumbotron {
+                height: 300px;
+                p {
+                    width: auto;
+                    font-size: 18px;
+                }
+            }
+            .history {
+                margin: 0;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+        .info._2 {
+            .left {
+                height: auto;
+                .content {
+                    width: auto;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+            }
+
+            .right {
+                height: 300px;
+            }
+        }
+    }
+    .info-banner {
+        p {
+            margin-bottom: 40px !important;
+        }
+    }
+
+    footer ul {
+        text-align: center;
+        margin: 15px auto;
+        padding: 0;
+    }
+
+    .news {
+        .single-news {
+            max-width: 320px;
+            float: none;
+            margin: 15px auto;
+        }
+    }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media screen and (max-width: 480px) {
+    header {
+        width: 90%;
+        .logo {
+            margin-left: 5px;
+        }
+    }
+    .aside-small-header {
+        display: none;
+    }
+    //index 
+    .main-jumbotron {
+        .aside-small-header {
+            display: none;
+        }
+        .container {
+            h2 {
+               font-size: 40px;
+            }
+            .buttons {
+                margin-top: 120px;
+                a {
+                    margin-left: 0;
+                    display: inline-block;
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-left: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .news {
+        h3 {
+            font-size: 57px;
+        }
+    }
+    .info,
+    .contact {
+        & > h3 {
+            font-size: 60px;
+        }
+        .row {
+            .left {
+                .content {
+                    margin: 100px auto;
+                    text-align: center;
+                    width: 90%;
+                }
+            }
+            .right {
+                background-size: contain;
+                height: 50%;
+            }
+        }
+    }
+    .for-visitors,
+     .for-expositors {
+        .row {
+            display: block;
+            .image {
+                background-size: contain !important;
+                height: 50%;
+            }
+            .info-banner {
+                margin: 30px auto;
+                p {          
+                    max-height: 140px;         
+                    max-height: -webkit-fill-available;
+                }
+            }
+        }
+        & > h3 {
+            font-size: 48px;
+        }
+     }
+     .assosiates {
+        .container {
+            h3 {
+                font-size: 60px;
+            }
+            .row {
+                margin: 0;
+                .col-xs-12 {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+     }
+
+    // /index
+    .info-banner.download {
+        margin: 15px auto;
+    }
+    .galleries,
+    .gallery {
+        .jumbotron {        
+            & + .container {
+                & > .row {
+                    height: auto;
+                    .col-xs-12 {
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .gallery {
+        // .row {
+        //     margin: 0;
+        //     .col-xs-12 {
+        //         margin-top: 30px;
+        //         margin-bottom: 30px;
+        //     }
+        // }        
+        .galleryNav {
+            .prev,
+            .next {
+                width: auto;
+            }
+        }
+    }
+    .contact {
+        &.container-fluid {
+            height: unset;
+        }
+        .row {
+            .box-contact {
+                padding: 20px;
+                min-height: unset;
+            }
+            .form-title > h3 {
+                display: none;
+            }
+
+            .form-title {
+                .aside-small-header {
+                    width: 230px;
+                    margin: 30px 0 30px;
+                    display: block;
+                    position: relative;
+                    h4 {
+                        text-indent: 20px;
+                        font-size: 16px;
+                    }
+                }
+            }  
+
+        }
+        form {
+            margin-bottom: 50px;
+            input {
+                padding: 10px;
+                font-size: 12px;
+            }
+            textarea {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .forExhibitors-drive {
+        .row {
+            .drive-title > h3 {
+                display: none;
+            }
+
+            .drive-title {
+                .aside-small-header {
+                    width: 230px;
+                    margin: 30px 0 30px;
+                    display: block;
+                    position: relative;
+                    h4 {
+                        text-indent: 20px;
+                        font-size: 16px;
+                    }
+                }
+            }  
+
+            .box-accommodation {
+                padding: 20px;
+                .price {
+                    float: none;
+                    display: block;
+                }
+            }
+
+        }
+    }
+
+    .about {
+        .first-edition {
+            .jumbotron {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media screen and (max-width : 320px) {
+
+}
